@@ -1,1 +1,14 @@
-{"rootDirectory": "adpilot"}
+{
+  "builds": [
+    {
+      "src": "adpilot/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "adpilot/$1"
+    }
+  ]
+}
