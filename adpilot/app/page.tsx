@@ -124,7 +124,7 @@ const [ads, setAds] = useState<any>(null);
           onClick={() => {
             const url =
               "https://accounts.google.com/o/oauth2/v2/auth?" +
-              "client_id=1035068875989-0ps2hcd0p3s3j64vnruhjggds3pe2229.apps.googleusercontent.com" +
+              `client_id=${process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}` +
               "&redirect_uri=https://musical-happiness-pjxpxvq6957rf756-3000.app.github.dev/api/auth/callback" +
               "&response_type=code" +
               "&scope=https://www.googleapis.com/auth/adwords" +
